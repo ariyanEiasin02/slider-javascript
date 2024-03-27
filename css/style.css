@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.silder{
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(0);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+}
+.active{
+    transform: translateX(100%);
+}
+.one{
+    background: url(../image/silder1.jpg) no-repeat center;
+}
+.two{
+    background: url(../image/silder2.jpg) no-repeat center;
+}
+.three{
+    background: url(../image/silder3.jpg) no-repeat center;
+}
+.prev{
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.next{
+    background: red;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
